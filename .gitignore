@@ -1,0 +1,6 @@
+.settings/
+.target/
+logs/
+*.class
+reports/
+test-output/
