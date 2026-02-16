@@ -10,8 +10,14 @@ import org.testng.annotations.BeforeMethod;
 import com.utils.ConfigReader;
 
 public class BaseTest {
-	protected WebDriver driver;
-	
+	public WebDriver driver;
+//	public BaseTest(WebDriver driver) {
+//		this.driver=driver;
+//	}
+//	public WebDriver getDriver() {
+//	    return driver;
+//	}
+//	
 	@BeforeMethod
 	public void setUp() {
 		driver = new ChromeDriver();
