@@ -45,7 +45,7 @@ public class RegressionTests extends BaseTest {
 		loginPage.login(
 				ConfigReader.getProperty("username"), ConfigReader.getProperty("password"));
 		Assert.assertTrue(dashBoardPage.isHeaderVisible(), "Logged in Successfully");
-		Log.logger.info("User Logged In Successfully");
+		Log.logger.info("Users Logged In Successfully");
 		//StepLogger.pass("Logged In Successfully");
 	}
 	
