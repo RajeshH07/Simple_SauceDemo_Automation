@@ -24,7 +24,8 @@ public class SmokeTests extends BaseTest{
 	@Test(groups="smoke")
 	public void Smoke01_Launch() {
 		//Assert.assertTrue(driver.getTitle().contains("Swag Labs"), "Title Mismatched");
-		Assert.assertTrue(false, "Force flase");
+		//Assert.assertEquals(driver.getTitle().equals("Swag Labs"), "Title Mismatch");
+		Assert.assertEquals(driver.getTitle(), "Swag Labs");		//Assert.assertTrue(false, "Force flase");
 		Log.logger.info("Application Launched Successfully");
 		//StepLogger.info("Application Launched");
 	}
@@ -38,8 +39,8 @@ public class SmokeTests extends BaseTest{
 		//StepLogger.info("Dash Board page is Visible");
 	}
 	
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
-	}
+//	@AfterMethod
+//	public void tearDown() {
+//		driver.quit();
+//	}
 }

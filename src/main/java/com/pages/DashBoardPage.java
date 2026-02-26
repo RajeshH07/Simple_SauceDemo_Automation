@@ -11,9 +11,18 @@ public class DashBoardPage {
 	}
 	
 	private By header = By.xpath("//div[@class='app_logo']");
-	private By subHeader = By.xpath("//span[@class='title']");
+	private By backPack = By.xpath("//div[text()='Sauce Labs Backpack']");
+	private By bikeLight = By.xpath("//div[text()='Sauce Labs Bike Light']");
 	
 	public boolean isHeaderVisible() {
 		return driver.findElement(header).isDisplayed();
+	}
+	
+	public void isBackPackAvailable() {
+		 driver.findElement(backPack).click();
+	}
+	
+	public void isBikeLightAvailable() {
+		driver.findElement(bikeLight).click();
 	}
 }

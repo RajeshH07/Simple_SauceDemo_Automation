@@ -18,5 +18,9 @@
 	</classes>
 </test>
 
-
+<test name="RegressionOnItem Test">
+	<classes>
+	<class name="com.test.RegressionOnItem"></class>
+	</classes>
+</test>
 </suite>

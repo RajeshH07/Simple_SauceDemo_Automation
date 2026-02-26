@@ -49,8 +49,8 @@ public class RegressionTests extends BaseTest {
 		//StepLogger.pass("Logged In Successfully");
 	}
 	
-	@AfterMethod
-	public void tearDown() {
-		driver.quit();
-	}
+//	@AfterMethod
+//	public void tearDown() {
+//		driver.quit();
+//	}
 }

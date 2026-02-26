@@ -4,6 +4,8 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 	 WebDriver driver;
@@ -19,13 +21,14 @@ public class LoginPage {
 	 public void login(String user, String pass) {
 		 driver.findElement(username).clear();
 		 driver.findElement(username).sendKeys(user);
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 		 
 		 driver.findElement(password).clear();
 		 driver.findElement(password).sendKeys(pass);
-		 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		 //driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50));
 
 		 driver.findElement(loginBtn).click();
+		 
 	 }
 	 
 	 public boolean isErrorMsgVisible() {
